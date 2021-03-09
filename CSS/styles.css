@@ -337,12 +337,16 @@ address a {
 /* portfolio */
 
 .filters {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   justify-content: center;
+}
+
+.filters .list {
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filters .element:not(:last-child) {
@@ -356,7 +360,6 @@ address a {
   padding: 6px 22px;
   min-width: 73px;
   height: 38px;
-  margin-bottom: 50px;
 
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
