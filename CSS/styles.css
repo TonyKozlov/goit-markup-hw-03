@@ -25,6 +25,7 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  align-items: center;
 }
 
 .list {
@@ -71,6 +72,7 @@ header {
   padding-top: 24px;
   padding-bottom: 25px;
   top: 32px;
+  display: flex;
 
   background-color: var(--primary-bg-color);
 
@@ -115,8 +117,6 @@ header .element:not(:last-child) {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--title-text-color);
 
@@ -140,8 +140,6 @@ header .element:not(:last-child) {
 
 .contacts {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 
@@ -168,7 +166,6 @@ header .element:not(:last-child) {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30px;
 
   color: var(--secondary-title-color);
 
@@ -323,6 +320,10 @@ footer .logotext {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+}
+
+address {
+  padding-left: 15px;
 }
 
 address a {
