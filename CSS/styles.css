@@ -37,6 +37,12 @@
 
 /* sections */
 
+section {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -60,6 +66,8 @@ body {
   line-height: 1.71;
   left: 0;
   top: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 body a {
@@ -251,6 +259,11 @@ header .element:not(:last-child) {
   margin-right: 30px;
 }
 
+.box {
+  width: 370px;
+  height: 294px;
+}
+
 /* team */
 
 .section.team {
@@ -261,16 +274,21 @@ header .element:not(:last-child) {
   background-color: var(--secondary-bg-color);
 }
 
+.employer {
+  width: 270px;
+  height: 260px;
+}
+
+.name {
+  padding-top: 30px;
+}
+
 .section.team .section-title {
   margin-bottom: 50px;
 }
 
 .section.team .item:not(:last-child) {
   margin-right: 30px;
-}
-
-.team-list img {
-  margin-bottom: 30px;
 }
 
 .team-list .title {
@@ -299,7 +317,6 @@ footer .container {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
 
   background-color: #2f303a;
   margin-right: auto;
@@ -346,7 +363,6 @@ address a {
 
 .filters .list {
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .filters .element:not(:last-child) {
@@ -374,19 +390,16 @@ address a {
 }
 
 .projects.list {
+  padding-top: 50px;
+  padding-bottom: 94px;
   flex-wrap: wrap;
-}
-
-.projects img {
-  margin-bottom: 20px;
 }
 
 .projects .title {
   width: 322px;
   margin-left: 24px;
   margin-top: 0px;
-  margin-bottom: 4px;
-
+  margin-bottom: 0px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -394,11 +407,16 @@ address a {
   line-height: 2;
 }
 
+.card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .projects p {
   width: 322px;
   margin-left: 24px;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 
   font-size: 16px;
   line-height: 1.87;
