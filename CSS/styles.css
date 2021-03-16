@@ -21,6 +21,8 @@
 
 .container {
   margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -35,9 +37,16 @@
   display: flex;
 }
 
+main {
+  align-items: center;
+  justify-content: center;
+
+}
+
 /* sections */
 
 section {
+  max-width: 1600px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -57,6 +66,7 @@ section {
 
 body {
   margin: auto;
+  max-width: 1600px;
 
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -81,6 +91,9 @@ header {
   padding-bottom: 25px;
   top: 32px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
 
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #ececec;
@@ -164,10 +177,19 @@ header .element:not(:last-child) {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
+  background-image: url(../images/Img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #2f303a;
 
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
@@ -241,6 +263,14 @@ header .element:not(:last-child) {
   margin-bottom: 0;
 }
 
+.image {
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
 /*about us*/
 
 .about {
@@ -262,6 +292,18 @@ header .element:not(:last-child) {
   height: 294px;
 }
 
+.about .element:nth-child(1) {
+  background-image: url(../images/spec1.jpg);
+}
+
+.about .element:nth-child(2) {
+  background-image: url(../images/spec2.jpg);
+}
+
+.about .element:nth-child(3) {
+  background-image: url(../images/spec3.jpg);
+}
+
 /* team */
 
 .section.team {
@@ -272,6 +314,14 @@ header .element:not(:last-child) {
   background-color: var(--secondary-bg-color);
 }
 
+.section.team .item {
+  padding-bottom: 30px;
+
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .employer {
   width: 270px;
   height: 260px;
@@ -279,6 +329,10 @@ header .element:not(:last-child) {
 
 .name {
   padding-top: 30px;
+}
+
+.socnetwork {
+  margin-top: 16px;
 }
 
 .section.team .section-title {
@@ -308,16 +362,59 @@ header .element:not(:last-child) {
   line-height: 1.19;
 }
 
+/* employers*/
+
+.employers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.employers h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.employers .item {
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.employers .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 footer .container {
-  display: inline;
+  display: flex;
+}
+
+.down {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: 1600px;
 
   background-color: #2f303a;
   margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .logotext {
@@ -337,16 +434,32 @@ footer .logotext {
   text-decoration: none;
 }
 
-address {
-  padding-left: 15px;
-}
-
 address a {
   color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  margin-right: 0;
+}
+
+.join h3 {
+  margin-top: 0;
+
+  color: var(--secondary-title-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: 70px;
+  justify-content: center;
 }
 
 /* portfolio */
@@ -424,6 +537,14 @@ address a {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.projects .item:hover,
+.projects .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects .item:nth-child(3n) {
